@@ -18,8 +18,7 @@ Project with requirement to connect to SAP ECC/S4 RFC (JCO). In june 2023 [JCO 3
     	  unzip /opt/jco.zip -d /tmp &&\
     	  mkdir /tmp/jco &&\
     	  tar zxf /tmp/sapjco3-linuxaarch64-3.1.8.tgz -C /tmp/jco &&\
-    	  cp -r /tmp/jco/* /opt/hybris/hybris/bin/modules/sap-framework-core/sapcorejco/lib/linuxaarch64/ &&\
-    	  ls -al /opt/hybris/hybris/bin/modules/sap-framework-core/sapcorejco/lib/linuxaarch64/
+    	  cp -r /tmp/jco/* /opt/hybris/hybris/bin/modules/sap-framework-core/sapcorejco/lib/linuxaarch64/
 
 Also make sure to enable Tanuki wrapper for Linux AARCH64
 
