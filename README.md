@@ -10,6 +10,8 @@ Project without requirement to connect to SAP ECC/S4 RFC (JCO): you don't need t
 ## Project with `sapcorejco` dependency
 Project with requirement to connect to SAP ECC/S4 RFC (JCO). In june 2023 [JCO 3.1.8](https://me.sap.com/notes/3347894) has been released with Linux AARCH64 (ARM64) support. In order to leverage this: when building your image on top of [SAPMachine 17 Docker image](https://hub.docker.com/_/sapmachine) make sure to add the following in your `Dockerfile`, after downloading [sapjco31P_8-70007911.zip](https://softwaredownloads.sap.com/file/0020000000874152023)
 
+    FROM sapmachine:17
+    
     # add JCO libs for Linux aarch64
     COPY sapjco31P_8-70007911.zip /opt/jco.zip
     RUN       mkdir -p /opt/hybris/hybris/bin/modules/sap-framework-core/sapcorejco/lib/linuxaarch64 &&\
